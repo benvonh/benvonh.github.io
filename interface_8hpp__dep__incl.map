@@ -1,0 +1,5 @@
+<map id="pid/controller/interface.hpp" name="pid/controller/interface.hpp">
+<area shape="rect" id="node1" title="Header file for PID definition and base interface." alt="" coords="7,5,205,32"/>
+<area shape="rect" id="node2" href="$controller_8hpp.html" title="Header file for controller definition." alt="" coords="5,80,207,107"/>
+<area shape="rect" id="node3" href="$pid_8hpp.html" title="Header file for pid library." alt="" coords="59,155,153,181"/>
+</map>
