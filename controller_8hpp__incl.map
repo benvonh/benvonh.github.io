@@ -1,4 +1,5 @@
-<map id="pid/controller/controller.hpp" name="pid/controller/controller.hpp">
-<area shape="rect" id="node1" title="Header file for controller definition." alt="" coords="5,5,207,32"/>
-<area shape="rect" id="node2" href="$interface_8hpp.html" title="Header file for PID definition and base interface." alt="" coords="52,80,160,107"/>
+<map id="pid/pid/controller/controller.hpp" name="pid/pid/controller/controller.hpp">
+<area shape="rect" id="node1" title="Header file for controller definition." alt="" coords="53,5,185,47"/>
+<area shape="rect" id="node2" href="$interface_8hpp.html" title="Header file for base control interface." alt="" coords="5,95,113,121"/>
+<area shape="rect" id="node3" href="$types_8hpp.html" title="Header file for proportional, integral and derivative type definition." alt="" coords="137,95,224,121"/>
 </map>

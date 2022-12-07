@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control library: pid::Controller&lt; C &gt; Class Template Reference</title>
+<title>benvonh: pid::Controller&lt; C &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PID Control library
+   <div id="projectname">benvonh
    </div>
+   <div id="projectbrief">A Collection of Simple and Naive Libraries</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +86,7 @@ $(document).ready(function(){initNavTree('classpid_1_1Controller.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="classpid_1_1Controller-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">pid::Controller&lt; C &gt; Class Template Reference</div>  </div>
@@ -116,25 +118,32 @@ Collaboration diagram for pid::Controller&lt; C &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a85c32c8aa250fb2f18d10f7ad459f9e2"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1Controller.html#a85c32c8aa250fb2f18d10f7ad459f9e2">Loop</a> (T err)</td></tr>
-<tr class="memdesc:a85c32c8aa250fb2f18d10f7ad459f9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute each control type and return its sum.  <a href="classpid_1_1Controller.html#a85c32c8aa250fb2f18d10f7ad459f9e2">More...</a><br /></td></tr>
-<tr class="separator:a85c32c8aa250fb2f18d10f7ad459f9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85fd5888a14c01a5b6b6912b369fbb73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73">Control</a> (const <a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> err) override</td></tr>
+<tr class="memdesc:a85fd5888a14c01a5b6b6912b369fbb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute each control type and return the controller output.  <a href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73">More...</a><br /></td></tr>
+<tr class="separator:a85fd5888a14c01a5b6b6912b369fbb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:aa8963c2e46cf305db25a9a3734b71b3c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> = typename Controller::_Type_</td></tr>
+<tr class="separator:aa8963c2e46cf305db25a9a3734b71b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class... C&gt;<br />
 class pid::Controller&lt; C &gt;</h3>
 
 <p>A <a class="el" href="classpid_1_1Controller.html" title="A Controller class derived from any combination of P, I and D types.">Controller</a> class derived from any combination of <a class="el" href="classpid_1_1P.html" title="The proportional control type.">P</a>, <a class="el" href="classpid_1_1I.html" title="The integral control type.">I</a> and <a class="el" href="classpid_1_1D.html" title="The derivative control type.">D</a> types. </p>
-<p>Types that are inherited must also inherit from <a class="el" href="classpid_1_1Base.html" title="An abstract base class to interface with the Controller class.">Base</a> which guarantee the Control() function implementation. Only one of each type can be used with the same typename parameter or a compilation error will occur.</p>
+<p>Types that are inherited must also inherit from <a class="el" href="classpid_1_1Base.html" title="An abstract base class to interface with the Controller class.">Base</a> which guarantee the <a class="el" href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73" title="Compute each control type and return the controller output.">Control()</a> function implementation for each component in the controller. Only one of each type can be used with the same typename parameter or a compilation error will occur.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">C</td><td>Comma-separated list of <a class="el" href="classpid_1_1P.html" title="The proportional control type.">P</a>, <a class="el" href="classpid_1_1I.html" title="The integral control type.">I</a> and <a class="el" href="classpid_1_1D.html" title="The derivative control type.">D</a> types </td></tr>
+    <tr><td class="paramname">C</td><td>Comma-separated list of unique <a class="el" href="classpid_1_1P.html" title="The proportional control type.">P</a>, <a class="el" href="classpid_1_1I.html" title="The integral control type.">I</a> or <a class="el" href="classpid_1_1D.html" title="The derivative control type.">D</a> types </td></tr>
   </table>
   </dd>
 </dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a85c32c8aa250fb2f18d10f7ad459f9e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85c32c8aa250fb2f18d10f7ad459f9e2">&#9670;&nbsp;</a></span>Loop()</h2>
+
+<p class="definition">Definition at line <a class="el" href="controller_8hpp_source.html#l00030">30</a> of file <a class="el" href="controller_8hpp_source.html">controller.hpp</a>.</p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa8963c2e46cf305db25a9a3734b71b3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8963c2e46cf305db25a9a3734b71b3c">&#9670;&nbsp;</a></span>T</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,21 +154,49 @@ template&lt;class... C&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classpid_1_1Controller.html">pid::Controller</a>&lt; C &gt;::Loop </td>
+          <td class="memname">using <a class="el" href="classpid_1_1Controller.html">pid::Controller</a>&lt; C &gt;::<a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> =  typename Controller::_Type_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inherited data type </p>
+
+<p class="definition">Definition at line <a class="el" href="controller_8hpp_source.html#l00032">32</a> of file <a class="el" href="controller_8hpp_source.html">controller.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a85fd5888a14c01a5b6b6912b369fbb73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85fd5888a14c01a5b6b6912b369fbb73">&#9670;&nbsp;</a></span>Control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> <a class="el" href="classpid_1_1Controller.html">pid::Controller</a>&lt; C &gt;::Control </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
+          <td class="paramtype">const <a class="el" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a>&#160;</td>
           <td class="paramname"><em>err</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Compute each control type and return its sum. </p>
+<p>Compute each control type and return the controller output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">err</td><td><a class="el" href="classpid_1_1Controller.html" title="A Controller class derived from any combination of P, I and D types.">Controller</a> input </td></tr>
@@ -168,10 +205,12 @@ template&lt;class... C&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>T <a class="el" href="classpid_1_1Controller.html" title="A Controller class derived from any combination of P, I and D types.">Controller</a> output </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="controller_8hpp_source.html#l00041">41</a> of file <a class="el" href="controller_8hpp_source.html">controller.hpp</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pid/controller/<a class="el" href="controller_8hpp_source.html">controller.hpp</a></li>
+<li>pid/pid/controller/<a class="el" href="controller_8hpp_source.html">controller.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

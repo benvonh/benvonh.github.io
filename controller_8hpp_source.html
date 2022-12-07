@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control library: pid/controller/controller.hpp Source File</title>
+<title>benvonh: pid/pid/controller/controller.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PID Control library
+   <div id="projectname">benvonh
    </div>
+   <div id="projectbrief">A Collection of Simple and Naive Libraries</div>
   </td>
  </tr>
  </tbody>
@@ -91,33 +92,36 @@ $(document).ready(function(){initNavTree('controller_8hpp_source.html',''); init
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef __CONTROLLER_HPP__</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define __CONTROLLER_HPP__</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespacepid.html">   14</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepid.html">pid</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>... C&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classpid_1_1Controller.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpid_1_1Controller.html">Controller</a> : <span class="keyword">public</span> C...</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">using</span> T = <span class="keyword">typename</span> Controller::_Type_; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classpid_1_1Controller.html#a85c32c8aa250fb2f18d10f7ad459f9e2">   37</a></span>&#160;    <span class="keyword">inline</span> T <a class="code" href="classpid_1_1Controller.html#a85c32c8aa250fb2f18d10f7ad459f9e2">Loop</a>(T err)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> (C::Control(err) + ...);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8hpp.html">interface.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span><span class="comment">/*__CONTROLLER_HPP__*/</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclasspid_1_1Controller_html"><div class="ttname"><a href="classpid_1_1Controller.html">pid::Controller</a></div><div class="ttdoc">A Controller class derived from any combination of P, I and D types.</div><div class="ttdef"><b>Definition:</b> controller.hpp:27</div></div>
-<div class="ttc" id="aclasspid_1_1Controller_html_a85c32c8aa250fb2f18d10f7ad459f9e2"><div class="ttname"><a href="classpid_1_1Controller.html#a85c32c8aa250fb2f18d10f7ad459f9e2">pid::Controller::Loop</a></div><div class="ttdeci">T Loop(T err)</div><div class="ttdoc">Compute each control type and return its sum.</div><div class="ttdef"><b>Definition:</b> controller.hpp:37</div></div>
-<div class="ttc" id="ainterface_8hpp_html"><div class="ttname"><a href="interface_8hpp.html">interface.hpp</a></div><div class="ttdoc">Header file for PID definition and base interface.</div></div>
-<div class="ttc" id="anamespacepid_html"><div class="ttname"><a href="namespacepid.html">pid</a></div><div class="ttdef"><b>Definition:</b> controller.hpp:15</div></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interface_8hpp.html">interface.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8hpp.html">types.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespacepid.html">   17</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacepid.html">pid</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>... C&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classpid_1_1Controller.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpid_1_1Controller.html">Controller</a> : <span class="keyword">public</span> C...</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">   32</a></span>&#160;<span class="keyword">using</span> <a class="code" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> = <span class="keyword">typename</span> Controller::_Type_; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73">   41</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> <a class="code" href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73">Control</a>(<span class="keyword">const</span> <a class="code" href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">T</a> err)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> (C::Control(err) + ...);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span><span class="comment">/*__CONTROLLER_HPP__*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclasspid_1_1Controller_html"><div class="ttname"><a href="classpid_1_1Controller.html">pid::Controller</a></div><div class="ttdoc">A Controller class derived from any combination of P, I and D types.</div><div class="ttdef"><b>Definition:</b> <a href="controller_8hpp_source.html#l00030">controller.hpp:31</a></div></div>
+<div class="ttc" id="aclasspid_1_1Controller_html_a85fd5888a14c01a5b6b6912b369fbb73"><div class="ttname"><a href="classpid_1_1Controller.html#a85fd5888a14c01a5b6b6912b369fbb73">pid::Controller::Control</a></div><div class="ttdeci">T Control(const T err) override</div><div class="ttdoc">Compute each control type and return the controller output.</div><div class="ttdef"><b>Definition:</b> <a href="controller_8hpp_source.html#l00041">controller.hpp:41</a></div></div>
+<div class="ttc" id="aclasspid_1_1Controller_html_aa8963c2e46cf305db25a9a3734b71b3c"><div class="ttname"><a href="classpid_1_1Controller.html#aa8963c2e46cf305db25a9a3734b71b3c">pid::Controller::T</a></div><div class="ttdeci">typename Controller::_Type_ T</div><div class="ttdef"><b>Definition:</b> <a href="controller_8hpp_source.html#l00032">controller.hpp:32</a></div></div>
+<div class="ttc" id="ainterface_8hpp_html"><div class="ttname"><a href="interface_8hpp.html">interface.hpp</a></div><div class="ttdoc">Header file for base control interface.</div></div>
+<div class="ttc" id="anamespacepid_html"><div class="ttname"><a href="namespacepid.html">pid</a></div><div class="ttdef"><b>Definition:</b> <a href="controller_8hpp_source.html#l00017">controller.hpp:18</a></div></div>
+<div class="ttc" id="atypes_8hpp_html"><div class="ttname"><a href="types_8hpp.html">types.hpp</a></div><div class="ttdoc">Header file for proportional, integral and derivative type definition.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_92a1a7c0ab61b5eb55ed2567221d2809.html">pid</a></li><li class="navelem"><a class="el" href="dir_9cd8cd264c549db5101f100b54e3af1a.html">controller</a></li><li class="navelem"><a class="el" href="controller_8hpp.html">controller.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_92a1a7c0ab61b5eb55ed2567221d2809.html">pid</a></li><li class="navelem"><a class="el" href="dir_ab528a92cc04853f9b5f3aa89f8ca268.html">pid</a></li><li class="navelem"><a class="el" href="dir_dc9fdc757bd431edd0026aa0a1f8b9c3.html">controller</a></li><li class="navelem"><a class="el" href="controller_8hpp.html">controller.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

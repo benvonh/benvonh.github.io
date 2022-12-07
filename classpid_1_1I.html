@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control library: pid::I&lt; T &gt; Class Template Reference</title>
+<title>benvonh: pid::I&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PID Control library
+   <div id="projectname">benvonh
    </div>
+   <div id="projectbrief">A Collection of Simple and Naive Libraries</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +98,7 @@ $(document).ready(function(){initNavTree('classpid_1_1I.html',''); initResizable
 <p>The integral control type.  
  <a href="classpid_1_1I.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="interface_8hpp_source.html">interface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="types_8hpp_source.html">types.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for pid::I&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -132,9 +133,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a58317dcfdb7d6729d04d7b9d2dd7b2be"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1I.html#a58317dcfdb7d6729d04d7b9d2dd7b2be">Control</a> (T err) override</td></tr>
-<tr class="memdesc:a58317dcfdb7d6729d04d7b9d2dd7b2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integral control function.  <a href="classpid_1_1I.html#a58317dcfdb7d6729d04d7b9d2dd7b2be">More...</a><br /></td></tr>
-<tr class="separator:a58317dcfdb7d6729d04d7b9d2dd7b2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57951ddf225e5284747fa407662ee0d4"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1I.html#a57951ddf225e5284747fa407662ee0d4">Control</a> (const T err) override</td></tr>
+<tr class="memdesc:a57951ddf225e5284747fa407662ee0d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integral control function.  <a href="classpid_1_1I.html#a57951ddf225e5284747fa407662ee0d4">More...</a><br /></td></tr>
+<tr class="separator:a57951ddf225e5284747fa407662ee0d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -158,48 +159,9 @@ class pid::I&lt; T &gt;</h3>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00046">46</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a58317dcfdb7d6729d04d7b9d2dd7b2be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58317dcfdb7d6729d04d7b9d2dd7b2be">&#9670;&nbsp;</a></span>Control()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classpid_1_1I.html">pid::I</a>&lt; T &gt;::Control </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The integral control function. </p>
-<p>Must update the Time field before each function call. Internally updates the total error.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classpid_1_1I.html#a94b9e794a03c3b2dd20cc0691d971021">Time</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">err</td><td>Control input </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>T Control output </dd></dl>
-
-<p>Implements <a class="el" href="classpid_1_1Base.html#a93fde58ae52bb42920752ccb23472aa8">pid::Base&lt; T &gt;</a>.</p>
-
-</div>
-</div>
 <a id="a0d9f530e2073f0eae0a9cf0f4dd3d1b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d9f530e2073f0eae0a9cf0f4dd3d1b8">&#9670;&nbsp;</a></span>GetTotalError()</h2>
 
@@ -228,6 +190,51 @@ template&lt;typename T &gt; </div>
 <p>Returns the total error. </p>
 <dl class="section return"><dt>Returns</dt><dd>T Sum of error </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00058">58</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a57951ddf225e5284747fa407662ee0d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57951ddf225e5284747fa407662ee0d4">&#9670;&nbsp;</a></span>Control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classpid_1_1I.html">pid::I</a>&lt; T &gt;::Control </td>
+          <td>(</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The integral control function. </p>
+<p>Must update the Time field before each function call. Internally updates the total error.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classpid_1_1I.html#a94b9e794a03c3b2dd20cc0691d971021">Time</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Control input </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T Control output </dd></dl>
+
+<p>Implements <a class="el" href="classpid_1_1Base.html#aa3e2d993ce961290dc6c613d5833c9ce">pid::Base&lt; T &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00077">77</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -245,6 +252,27 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Integral gain </p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00049">49</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a94b9e794a03c3b2dd20cc0691d971021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b9e794a03c3b2dd20cc0691d971021">&#9670;&nbsp;</a></span>Time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classpid_1_1I.html">pid::I</a>&lt; T &gt;::Time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Total time elapsed </p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00050">50</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -271,27 +299,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Sum of error </p>
 
-</div>
-</div>
-<a id="a94b9e794a03c3b2dd20cc0691d971021"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94b9e794a03c3b2dd20cc0691d971021">&#9670;&nbsp;</a></span>Time</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classpid_1_1I.html">pid::I</a>&lt; T &gt;::Time</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Total time elapsed </p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00064">64</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pid/controller/<a class="el" href="interface_8hpp_source.html">interface.hpp</a></li>
+<li>pid/pid/controller/<a class="el" href="types_8hpp_source.html">types.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

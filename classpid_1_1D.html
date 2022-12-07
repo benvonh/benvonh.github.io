@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control library: pid::D&lt; T &gt; Class Template Reference</title>
+<title>benvonh: pid::D&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PID Control library
+   <div id="projectname">benvonh
    </div>
+   <div id="projectbrief">A Collection of Simple and Naive Libraries</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +98,7 @@ $(document).ready(function(){initNavTree('classpid_1_1D.html',''); initResizable
 <p>The derivative control type.  
  <a href="classpid_1_1D.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="interface_8hpp_source.html">interface.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="types_8hpp_source.html">types.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for pid::D&lt; T &gt;:</div>
 <div class="dyncontent">
@@ -132,9 +133,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a162e78bff8f4b335af95e03000969599"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1D.html#a162e78bff8f4b335af95e03000969599">Control</a> (T err) override</td></tr>
-<tr class="memdesc:a162e78bff8f4b335af95e03000969599"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derivative control function.  <a href="classpid_1_1D.html#a162e78bff8f4b335af95e03000969599">More...</a><br /></td></tr>
-<tr class="separator:a162e78bff8f4b335af95e03000969599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab095d3b30e5ea1b8d3ef9fa331fc084b"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1D.html#ab095d3b30e5ea1b8d3ef9fa331fc084b">Control</a> (const T err) override</td></tr>
+<tr class="memdesc:ab095d3b30e5ea1b8d3ef9fa331fc084b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derivative control function.  <a href="classpid_1_1D.html#ab095d3b30e5ea1b8d3ef9fa331fc084b">More...</a><br /></td></tr>
+<tr class="separator:ab095d3b30e5ea1b8d3ef9fa331fc084b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -158,47 +159,9 @@ class pid::D&lt; T &gt;</h3>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00090">90</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a162e78bff8f4b335af95e03000969599"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a162e78bff8f4b335af95e03000969599">&#9670;&nbsp;</a></span>Control()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classpid_1_1D.html">pid::D</a>&lt; T &gt;::Control </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>err</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The derivative control function. </p>
-<p>Must set the Period field before initial function call. Internally updates the previous error.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">err</td><td>Control input </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>T Control output </dd></dl>
-
-<p>Implements <a class="el" href="classpid_1_1Base.html#a93fde58ae52bb42920752ccb23472aa8">pid::Base&lt; T &gt;</a>.</p>
-
-</div>
-</div>
 <a id="a9dbc9e78688c88deaa7247826720c50b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9dbc9e78688c88deaa7247826720c50b">&#9670;&nbsp;</a></span>GetPrevError()</h2>
 
@@ -227,6 +190,50 @@ template&lt;typename T &gt; </div>
 <p>Returns the previous error. </p>
 <dl class="section return"><dt>Returns</dt><dd>T Previous error </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00102">102</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab095d3b30e5ea1b8d3ef9fa331fc084b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab095d3b30e5ea1b8d3ef9fa331fc084b">&#9670;&nbsp;</a></span>Control()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classpid_1_1D.html">pid::D</a>&lt; T &gt;::Control </td>
+          <td>(</td>
+          <td class="paramtype">const T&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The derivative control function. </p>
+<p>Must set the Period field before initial function call. Internally updates the previous error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>Control input </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>T Control output </dd></dl>
+
+<p>Implements <a class="el" href="classpid_1_1Base.html#aa3e2d993ce961290dc6c613d5833c9ce">pid::Base&lt; T &gt;</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00120">120</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -244,6 +251,27 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Derivative gain </p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00093">93</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
+
+</div>
+</div>
+<a id="acd836aed5b15f09f38417750b7f12f3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd836aed5b15f09f38417750b7f12f3f">&#9670;&nbsp;</a></span>Period</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classpid_1_1D.html">pid::D</a>&lt; T &gt;::Period</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sampling period </p>
+
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00094">94</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
@@ -270,27 +298,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Previous error </p>
 
-</div>
-</div>
-<a id="acd836aed5b15f09f38417750b7f12f3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd836aed5b15f09f38417750b7f12f3f">&#9670;&nbsp;</a></span>Period</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T <a class="el" href="classpid_1_1D.html">pid::D</a>&lt; T &gt;::Period</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sampling period </p>
+<p class="definition">Definition at line <a class="el" href="types_8hpp_source.html#l00108">108</a> of file <a class="el" href="types_8hpp_source.html">types.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>pid/controller/<a class="el" href="interface_8hpp_source.html">interface.hpp</a></li>
+<li>pid/pid/controller/<a class="el" href="types_8hpp_source.html">types.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

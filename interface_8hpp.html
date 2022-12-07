@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PID Control library: pid/controller/interface.hpp File Reference</title>
+<title>benvonh: pid/pid/controller/interface.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,8 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PID Control library
+   <div id="projectname">benvonh
    </div>
+   <div id="projectbrief">A Collection of Simple and Naive Libraries</div>
   </td>
  </tr>
  </tbody>
@@ -91,16 +92,17 @@ $(document).ready(function(){initNavTree('interface_8hpp.html',''); initResizabl
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for PID definition and base interface.  
+<p>Header file for base control interface.  
 <a href="#details">More...</a></p>
 <div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_8hpp__dep__incl.png" border="0" usemap="#apid_2controller_2interface_8hppdep" alt=""/></div>
-<map name="apid_2controller_2interface_8hppdep" id="apid_2controller_2interface_8hppdep">
-<area shape="rect" title="Header file for PID definition and base interface." alt="" coords="7,5,205,32"/>
-<area shape="rect" href="controller_8hpp.html" title="Header file for controller definition." alt="" coords="5,80,207,107"/>
-<area shape="rect" href="pid_8hpp.html" title="Header file for pid library." alt="" coords="59,155,153,181"/>
+<div class="center"><img src="interface_8hpp__dep__incl.png" border="0" usemap="#apid_2pid_2controller_2interface_8hppdep" alt=""/></div>
+<map name="apid_2pid_2controller_2interface_8hppdep" id="apid_2pid_2controller_2interface_8hppdep">
+<area shape="rect" title="Header file for base control interface." alt="" coords="23,5,155,47"/>
+<area shape="rect" href="controller_8hpp.html" title="Header file for controller definition." alt="" coords="23,95,155,136"/>
+<area shape="rect" href="pid_8hpp.html" title="Header file for pid library." alt="" coords="29,184,148,211"/>
+<area shape="rect" href="main_8cpp.html" title=" " alt="" coords="5,259,172,285"/>
 </map>
 </div>
 </div>
@@ -111,15 +113,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1Base.html">pid::Base&lt; T &gt;</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An abstract base class to interface with the <a class="el" href="classpid_1_1Controller.html" title="A Controller class derived from any combination of P, I and D types.">Controller</a> class.  <a href="classpid_1_1Base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1P.html">pid::P&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The proportional control type.  <a href="classpid_1_1P.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1I.html">pid::I&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The integral control type.  <a href="classpid_1_1I.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpid_1_1D.html">pid::D&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The derivative control type.  <a href="classpid_1_1D.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -127,17 +120,19 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for PID definition and base interface. </p>
+<div class="textblock"><p>Header file for base control interface. </p>
 <dl class="section author"><dt>Author</dt><dd>Benjamin von Snarski (<a href="#" onclick="location.href='mai'+'lto:'+'ben'+'ja'+'min'+'vo'+'nsn'+'ar'+'ski'+'@g'+'mai'+'l.'+'com'; return false;">benja<span style="display: none;">.nosp@m.</span>minv<span style="display: none;">.nosp@m.</span>onsna<span style="display: none;">.nosp@m.</span>rski<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>07-12-2022</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="interface_8hpp_source.html">interface.hpp</a>.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_92a1a7c0ab61b5eb55ed2567221d2809.html">pid</a></li><li class="navelem"><a class="el" href="dir_9cd8cd264c549db5101f100b54e3af1a.html">controller</a></li><li class="navelem"><a class="el" href="interface_8hpp.html">interface.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_92a1a7c0ab61b5eb55ed2567221d2809.html">pid</a></li><li class="navelem"><a class="el" href="dir_ab528a92cc04853f9b5f3aa89f8ca268.html">pid</a></li><li class="navelem"><a class="el" href="dir_dc9fdc757bd431edd0026aa0a1f8b9c3.html">controller</a></li><li class="navelem"><a class="el" href="interface_8hpp.html">interface.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
