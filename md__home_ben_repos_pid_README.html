@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Simple Libraries: pid</title>
+<title>Simple Robots: pid</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,9 +27,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Simple Libraries
+   <div id="projectname">Simple Robots
    </div>
-   <div id="projectbrief">A collection of simple and naive libraries</div>
+   <div id="projectbrief">Simple libraries for robotic engineers</div>
   </td>
  </tr>
  </tbody>
@@ -88,53 +88,55 @@ $(document).ready(function(){initNavTree('md__home_ben_repos_pid_README.html',''
 <div class="title">pid </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A simple and naive library for PID control. See <code><a class="el" href="main_8cpp.html">example/main.cpp</a></code> for tl;dr.</p>
+<div class="textblock"><p>A simple and naive library for PID control. See <code>example/main.cpp</code> for a quick start.</p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Files</h1>
 <div class="fragment"><div class="line">pid</div>
 <div class="line">├── controller</div>
 <div class="line">│   ├── controller.hpp</div>
 <div class="line">│   ├── interface.hpp</div>
 <div class="line">│   └── types.hpp</div>
 <div class="line">└── pid.hpp</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md4"></a>
 Usage</h1>
-<div class="fragment"><div class="line"> {C++}</div>
-<div class="line">// All controllers under the `pid` namespace</div>
-<div class="line">using namespace pid;</div>
+<div class="fragment"><div class="line"><span class="comment">// All controllers under the `pid` namespace</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacepid.html">pid</a>;</div>
 <div class="line"> </div>
-<div class="line">// Template argument specifies the data type</div>
+<div class="line"><span class="comment">// Template argument specifies the data type</span></div>
 <div class="line">P&lt;float&gt; proportional_controller;</div>
 <div class="line">I&lt;double&gt; integral_controller;</div>
 <div class="line">D&lt;long double&gt; derivative_controller;</div>
 <div class="line"> </div>
-<div class="line">// A controller class allows for types of control</div>
-<div class="line">// Nested template parameters must have the same data type</div>
-<div class="line">Controller&lt;P&lt;float&gt;, I&lt;float&gt;&gt; pi_controller;  // OK</div>
-<div class="line">Controller&lt;P&lt;float&gt;, P&lt;float&gt;&gt; pp_controller;  // compile-time error</div>
-<div class="line">Controller&lt;P&lt;float&gt;, D&lt;double&gt;&gt; pd_controller; // compile-time error</div>
+<div class="line"><span class="comment">// A controller class allows for types of control</span></div>
+<div class="line"><span class="comment">// Nested template parameters must have the same data type</span></div>
+<div class="line">Controller&lt;P&lt;float&gt;, I&lt;float&gt;&gt; pi_controller;  <span class="comment">// OK</span></div>
+<div class="line">Controller&lt;P&lt;float&gt;, P&lt;float&gt;&gt; pp_controller;  <span class="comment">// compile-time error</span></div>
+<div class="line">Controller&lt;P&lt;float&gt;, D&lt;double&gt;&gt; pd_controller; <span class="comment">// compile-time error</span></div>
 <div class="line"> </div>
-<div class="line">// NOTE: Controllers do not define a constructor</div>
-<div class="line">Controller&lt;P&lt;float&gt;, I&lt;float&gt;, D&lt;float&gt;&gt; pid_controller{}; // zero-initialised</div>
+<div class="line"><span class="comment">// NOTE: Controllers do not define a constructor</span></div>
+<div class="line">Controller&lt;P&lt;float&gt;, I&lt;float&gt;, D&lt;float&gt;&gt; pid_controller{}; <span class="comment">// zero-initialised</span></div>
 <div class="line"> </div>
-<div class="line">// Aliases are provided for easier controller declaration</div>
-<div class="line">// Default template parameter is double</div>
-<div class="line">PI&lt;float&gt; pi_controller; // same as above</div>
-<div class="line">PID&lt;&gt; pid_controller;    // same as above but with double</div>
+<div class="line"><span class="comment">// Aliases are provided for easier controller declaration</span></div>
+<div class="line"><span class="comment">// Default template parameter is double</span></div>
+<div class="line">PI&lt;float&gt; pi_controller; <span class="comment">// same as above</span></div>
+<div class="line">PID&lt;&gt; pid_controller;    <span class="comment">// same as above but with double</span></div>
 <div class="line"> </div>
-<div class="line">// Depending on the controller composition, certain fields are inherited</div>
-<div class="line">pid_controller.Kp = 1.0; // only with P&lt;&gt;</div>
-<div class="line">pid_controller.Ki = 2.0; // only with I&lt;&gt;</div>
-<div class="line">pid_controller.Kd = 3.0; // only with D&lt;&gt;</div>
+<div class="line"><span class="comment">// Depending on the controller composition, certain fields are inherited</span></div>
+<div class="line">pid_controller.Kp = 1.0; <span class="comment">// only with P&lt;&gt;</span></div>
+<div class="line">pid_controller.Ki = 2.0; <span class="comment">// only with I&lt;&gt;</span></div>
+<div class="line">pid_controller.Kd = 3.0; <span class="comment">// only with D&lt;&gt;</span></div>
 <div class="line"> </div>
-<div class="line">// Some control types have special member functions</div>
-<div class="line">pid_controller.GetTotalError(); // only with I&lt;&gt;</div>
-<div class="line">pid_controller.GetPrevError();  // only with D&lt;&gt;</div>
-<div class="line">// ...and special field requirements</div>
-<div class="line">pid_controller.Time = 4.0;      // total time elapsed for I&lt;&gt;</div>
-<div class="line">pid_controller.Period = 5.0;    // sampling period for D&lt;&gt;</div>
+<div class="line"><span class="comment">// Some control types have special member functions</span></div>
+<div class="line">pid_controller.GetTotalError(); <span class="comment">// only with I&lt;&gt;</span></div>
+<div class="line">pid_controller.GetPrevError();  <span class="comment">// only with D&lt;&gt;</span></div>
+<div class="line"><span class="comment">// ...and special field requirements</span></div>
+<div class="line">pid_controller.Time = 4.0;      <span class="comment">// total time elapsed for I&lt;&gt;</span></div>
+<div class="line">pid_controller.Period = 5.0;    <span class="comment">// sampling period for D&lt;&gt;</span></div>
 <div class="line"> </div>
-<div class="line">// To run the controller</div>
+<div class="line"><span class="comment">// To run the controller</span></div>
 <div class="line">pid_controller.Control(6.0);</div>
 <div class="line">proportional_controller.Control(7.0);</div>
+<div class="ttc" id="anamespacepid_html"><div class="ttname"><a href="namespacepid.html">pid</a></div><div class="ttdef"><b>Definition:</b> <a href="controller_8hpp_source.html#l00017">controller.hpp:18</a></div></div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

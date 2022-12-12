@@ -1,4 +1,4 @@
 <map id="pid::P&lt; T &gt;" name="pid::P&lt; T &gt;">
 <area shape="rect" id="node1" title="The proportional control type." alt="" coords="17,80,113,107"/>
-<area shape="rect" id="node2" href="$classpid_1_1Base.html" title="An abstract base class to interface with the Controller class." alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node2" href="$classpid_1_1Base.html" title="An abstract base class interface for derived controllers." alt="" coords="5,5,125,32"/>
 </map>

@@ -24,12 +24,13 @@
 */
 var NAVTREE =
 [
-  [ "Simple Libraries", "index.html", [
+  [ "Simple Robots", "index.html", [
     [ "linalg", "md__home_ben_repos_linalg_README.html", [
       [ "Contents", "md__home_ben_repos_linalg_README.html#autotoc_md1", null ]
     ] ],
     [ "pid", "md__home_ben_repos_pid_README.html", [
-      [ "Usage", "md__home_ben_repos_pid_README.html#autotoc_md3", null ]
+      [ "Files", "md__home_ben_repos_pid_README.html#autotoc_md3", null ],
+      [ "Usage", "md__home_ben_repos_pid_README.html#autotoc_md4", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
