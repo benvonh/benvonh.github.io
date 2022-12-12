@@ -1,6 +1,6 @@
-<map id="pid/pid/pid.hpp" name="pid/pid/pid.hpp">
-<area shape="rect" id="node1" title="Header file for pid library." alt="" coords="60,5,179,32"/>
-<area shape="rect" id="node2" href="$controller_8hpp.html" title="Header file for controller definition." alt="" coords="31,80,208,107"/>
-<area shape="rect" id="node3" href="$interface_8hpp.html" title="Header file for base control interface." alt="" coords="5,155,113,181"/>
-<area shape="rect" id="node4" href="$types_8hpp.html" title="Header file for proportional, integral and derivative type definition." alt="" coords="137,155,224,181"/>
+<map id="/home/ben/repos/pid/pid/pid.hpp" name="/home/ben/repos/pid/pid/pid.hpp">
+<area shape="rect" id="node1" title="Header file for pid library." alt="" coords="42,5,197,47"/>
+<area shape="rect" id="node2" href="$controller_8hpp.html" title="Header file for controller definition." alt="" coords="31,95,208,121"/>
+<area shape="rect" id="node3" href="$interface_8hpp.html" title="Header file for base control interface." alt="" coords="5,169,113,196"/>
+<area shape="rect" id="node4" href="$types_8hpp.html" title="Header file for proportional, integral and derivative type definition." alt="" coords="137,169,224,196"/>
 </map>

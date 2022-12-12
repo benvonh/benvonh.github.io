@@ -1,5 +1,5 @@
-<map id="pid/pid/controller/controller.hpp" name="pid/pid/controller/controller.hpp">
-<area shape="rect" id="node1" title="Header file for controller definition." alt="" coords="23,5,155,47"/>
-<area shape="rect" id="node2" href="$pid_8hpp.html" title="Header file for pid library." alt="" coords="29,95,148,121"/>
-<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="5,169,172,196"/>
+<map id="/home/ben/repos/pid/pid/controller/controller.hpp" name="/home/ben/repos/pid/pid/controller/controller.hpp">
+<area shape="rect" id="node1" title="Header file for controller definition." alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$pid_8hpp.html" title="Header file for pid library." alt="" coords="31,95,185,136"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title=" " alt="" coords="31,184,185,225"/>
 </map>

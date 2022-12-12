@@ -7,5 +7,7 @@ var searchData=
   ['main_2ecpp_27',['main.cpp',['../main_8cpp.html',1,'']]],
   ['matrix_28',['Matrix',['../classlinalg_1_1Matrix.html',1,'linalg::Matrix&lt; M, N, T &gt;'],['../classlinalg_1_1Matrix.html#a94dcf671c12e0da51c0881da9999cabd',1,'linalg::Matrix::Matrix()']]],
   ['matrix_2ehpp_29',['matrix.hpp',['../matrix_8hpp.html',1,'']]],
-  ['matrix_5fprint_5fprecision_30',['MATRIX_PRINT_PRECISION',['../matrix_8hpp.html#a44f8a3dfd5eaf89bd2c905720b7052ba',1,'matrix.hpp']]]
+  ['matrix_5fimpl_2etpp_30',['matrix_impl.tpp',['../matrix__impl_8tpp.html',1,'']]],
+  ['matrix_5foper_2etpp_31',['matrix_oper.tpp',['../matrix__oper_8tpp.html',1,'']]],
+  ['matrix_5fprint_5fprecision_32',['MATRIX_PRINT_PRECISION',['../matrix_8hpp.html#a44f8a3dfd5eaf89bd2c905720b7052ba',1,'matrix.hpp']]]
 ];
