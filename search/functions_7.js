@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['transpose_97',['Transpose',['../classlinalg_1_1Matrix.html#a503aa94e673b5402b3dc373d99c886f6',1,'linalg::Matrix']]]
+  ['lu_5fdecomposition_112',['LU_Decomposition',['../structlinalg_1_1Matrix.html#a0cb8a3b8ddf96e02c84acb8643334be9',1,'linalg::Matrix']]]
 ];

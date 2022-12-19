@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['i_14',['I',['../classpid_1_1I.html',1,'pid']]],
-  ['idx_15',['idx',['../classlinalg_1_1Matrix.html#ae52537c6ec9fd49feaf775732519aabb',1,'linalg::Matrix']]],
-  ['interface_2ehpp_16',['interface.hpp',['../interface_8hpp.html',1,'']]]
+  ['getcol_20',['GetCol',['../structlinalg_1_1Matrix.html#a4ad66fb5bddb56303943eeff406b78a4',1,'linalg::Matrix']]],
+  ['getpreverror_21',['GetPrevError',['../classpid_1_1D.html#a9dbc9e78688c88deaa7247826720c50b',1,'pid::D']]],
+  ['getrow_22',['GetRow',['../structlinalg_1_1Matrix.html#a63b7456f6a128dbd39e39b4275251078',1,'linalg::Matrix']]],
+  ['gettotalerror_23',['GetTotalError',['../classpid_1_1I.html#a0d9f530e2073f0eae0a9cf0f4dd3d1b8',1,'pid::I']]]
 ];

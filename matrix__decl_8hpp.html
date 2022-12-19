@@ -94,28 +94,35 @@ $(document).ready(function(){initNavTree('matrix__decl_8hpp.html',''); initResiz
 <div class="title">matrix_decl.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for matrix declaration.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;iterator&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for matrix_decl.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="matrix__decl_8hpp__incl.png" border="0" usemap="#a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hpp" alt=""/></div>
 <map name="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hpp" id="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hpp">
-<area shape="rect" title=" " alt="" coords="302,5,473,61"/>
+<area shape="rect" title="Header file for matrix declaration." alt="" coords="379,5,550,61"/>
 <area shape="rect" title=" " alt="" coords="5,109,76,136"/>
 <area shape="rect" title=" " alt="" coords="100,109,165,136"/>
-<area shape="rect" title=" " alt="" coords="190,109,275,136"/>
-<area shape="rect" title=" " alt="" coords="299,109,374,136"/>
-<area shape="rect" title=" " alt="" coords="398,109,478,136"/>
-<area shape="rect" title=" " alt="" coords="503,109,573,136"/>
-<area shape="rect" title=" " alt="" coords="598,109,673,136"/>
-<area shape="rect" title=" " alt="" coords="697,109,784,136"/>
+<area shape="rect" title=" " alt="" coords="190,109,265,136"/>
+<area shape="rect" title=" " alt="" coords="289,109,363,136"/>
+<area shape="rect" title=" " alt="" coords="388,109,448,136"/>
+<area shape="rect" title=" " alt="" coords="473,109,553,136"/>
+<area shape="rect" title=" " alt="" coords="577,109,648,136"/>
+<area shape="rect" title=" " alt="" coords="673,109,758,136"/>
+<area shape="rect" title=" " alt="" coords="783,109,869,136"/>
+<area shape="rect" title=" " alt="" coords="893,109,980,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -123,12 +130,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="matrix__decl_8hpp__dep__incl.png" border="0" usemap="#a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hppdep" alt=""/></div>
 <map name="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hppdep" id="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__decl_8hppdep">
-<area shape="rect" title=" " alt="" coords="26,5,197,61"/>
-<area shape="rect" href="matrix_8hpp.html" title=" " alt="" coords="19,213,203,255"/>
-<area shape="rect" href="matrix__impl_8hpp.html" title=" " alt="" coords="26,109,197,165"/>
-<area shape="rect" href="matrix__oper_8hpp.html" title=" " alt="" coords="221,109,391,165"/>
-<area shape="rect" href="linalg_8hpp.html" title=" " alt="" coords="26,303,197,344"/>
-<area shape="rect" href="linalg_2example_2main_8cpp.html" title=" " alt="" coords="26,392,197,433"/>
+<area shape="rect" title="Header file for matrix declaration." alt="" coords="125,5,296,61"/>
+<area shape="rect" href="matrix_8hpp.html" title="Header file for matrix module." alt="" coords="119,213,303,255"/>
+<area shape="rect" href="matrix__impl_8hpp.html" title="Header file for matrix implementation." alt="" coords="28,109,199,165"/>
+<area shape="rect" href="matrix__iter_8hpp.html" title="Header file for matrix iterator definition." alt="" coords="223,109,393,165"/>
+<area shape="rect" href="matrix__oper_8hpp.html" title="Header file for overloaded matrix operators." alt="" coords="417,109,588,165"/>
+<area shape="rect" href="linalg_8hpp.html" title="Header file for linalg library." alt="" coords="125,303,296,344"/>
+<area shape="rect" href="linalg_2example_2main_8cpp.html" title=" " alt="" coords="125,392,296,433"/>
 </map>
 </div>
 </div>
@@ -136,7 +144,11 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlinalg_1_1Matrix.html">linalg::Matrix&lt; M, N, T &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlinalg_1_1Matrix.html">linalg::Matrix&lt; M, N, T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <a class="el" href="structlinalg_1_1Matrix.html" title="A Matrix class representing a 2 dimensional object.">Matrix</a> class representing a 2 dimensional object.  <a href="structlinalg_1_1Matrix.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlinalg_1_1Matrix_1_1Iterator.html">linalg::Matrix&lt; M, N, T &gt;::Iterator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The iterator class (see C++ iterator convention).  <a href="classlinalg_1_1Matrix_1_1Iterator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -154,9 +166,20 @@ Macros</h2></td></tr>
 <tr class="separator:a955eaff8d0d76bd00cc8f30841ba8944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af87663fa14088ae27e01fac589358f8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix__decl_8hpp.html#af87663fa14088ae27e01fac589358f8e">__matrix_assert_bounds</a>()</td></tr>
 <tr class="separator:af87663fa14088ae27e01fac589358f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6efccf273c65e9671b18bffc4aa58f48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix__decl_8hpp.html#a6efccf273c65e9671b18bffc4aa58f48">__matrix_assert_square</a>()</td></tr>
+<tr class="separator:a6efccf273c65e9671b18bffc4aa58f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955eaff8d0d76bd00cc8f30841ba8944"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix__decl_8hpp.html#a955eaff8d0d76bd00cc8f30841ba8944">__matrix_assert_index</a>()</td></tr>
+<tr class="separator:a955eaff8d0d76bd00cc8f30841ba8944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af87663fa14088ae27e01fac589358f8e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix__decl_8hpp.html#af87663fa14088ae27e01fac589358f8e">__matrix_assert_bounds</a>()</td></tr>
+<tr class="separator:af87663fa14088ae27e01fac589358f8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6efccf273c65e9671b18bffc4aa58f48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="matrix__decl_8hpp.html#a6efccf273c65e9671b18bffc4aa58f48">__matrix_assert_square</a>()</td></tr>
+<tr class="separator:a6efccf273c65e9671b18bffc4aa58f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:abfe6305a150223d5b2deee38496b07e4"><td class="memTemplParams" colspan="2">template&lt;std::size_t N, typename T  = double&gt; </td></tr>
+<tr class="memitem:abfe6305a150223d5b2deee38496b07e4"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#abfe6305a150223d5b2deee38496b07e4">linalg::Array</a> = Matrix&lt; 1, N, T &gt;</td></tr>
+<tr class="separator:abfe6305a150223d5b2deee38496b07e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2155db22aa390a52a6ba8b380e59e86"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, typename T  = double&gt; </td></tr>
 <tr class="memitem:aa2155db22aa390a52a6ba8b380e59e86"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#aa2155db22aa390a52a6ba8b380e59e86">linalg::Vector</a> = Matrix&lt; M, 1, T &gt;</td></tr>
 <tr class="separator:aa2155db22aa390a52a6ba8b380e59e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +192,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae855dcfc7bb216c09a649c68072e61d8"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
 <tr class="memitem:ae855dcfc7bb216c09a649c68072e61d8"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#ae855dcfc7bb216c09a649c68072e61d8">linalg::operator-</a> (Matrix&lt; M, N, T &gt; lhs, const Matrix&lt; M, N, T &gt; &amp;rhs)</td></tr>
 <tr class="separator:ae855dcfc7bb216c09a649c68072e61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f09673004bbf7c94ebfef8a695660c"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:a99f09673004bbf7c94ebfef8a695660c"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a99f09673004bbf7c94ebfef8a695660c">linalg::operator*</a> (Matrix&lt; M, N, T &gt; lhs, T rhs)</td></tr>
+<tr class="separator:a99f09673004bbf7c94ebfef8a695660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6efc7e293a96f36c76de17ea0b069b"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:aef6efc7e293a96f36c76de17ea0b069b"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#aef6efc7e293a96f36c76de17ea0b069b">linalg::operator*</a> (T lhs, Matrix&lt; M, N, T &gt; rhs)</td></tr>
+<tr class="separator:aef6efc7e293a96f36c76de17ea0b069b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, std::size_t K, typename T &gt; </td></tr>
 <tr class="memitem:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, K, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a9a34bce9a86bc8546d6b93c31127bd66">linalg::operator*</a> (Matrix&lt; M, N, T &gt; lhs, const Matrix&lt; N, K, T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,8 +210,22 @@ Functions</h2></td></tr>
 <tr class="memitem:a362a380d4067f1f8dfb58554a21354f3"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
 <tr class="memitem:a362a380d4067f1f8dfb58554a21354f3"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a362a380d4067f1f8dfb58554a21354f3">linalg::operator&lt;&lt;</a> (std::ostream &amp;os, const Matrix&lt; M, N, T &gt; &amp;obj)</td></tr>
 <tr class="separator:a362a380d4067f1f8dfb58554a21354f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad59ff63bc8bd307c04075a0b244e395a"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:ad59ff63bc8bd307c04075a0b244e395a"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#ad59ff63bc8bd307c04075a0b244e395a">linalg::operator==</a> (const typename Matrix&lt; M, N, T &gt;::Iterator &amp;lhs, const typename Matrix&lt; M, N, T &gt;::Iterator &amp;rhs)</td></tr>
+<tr class="separator:ad59ff63bc8bd307c04075a0b244e395a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436d0df9930aaa9d3382fcf436bf0dc4"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:a436d0df9930aaa9d3382fcf436bf0dc4"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a436d0df9930aaa9d3382fcf436bf0dc4">linalg::operator!=</a> (const typename Matrix&lt; M, N, T &gt;::Iterator &amp;lhs, const typename Matrix&lt; M, N, T &gt;::Iterator &amp;rhs)</td></tr>
+<tr class="separator:a436d0df9930aaa9d3382fcf436bf0dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for matrix declaration. </p>
+<dl class="section author"><dt>Author</dt><dd>Benjamin von Snarski (<a href="#" onclick="location.href='mai'+'lto:'+'ben'+'ja'+'min'+'vo'+'nsn'+'ar'+'ski'+'@g'+'mai'+'l.'+'com'; return false;">benja<span style="display: none;">.nosp@m.</span>minv<span style="display: none;">.nosp@m.</span>onsna<span style="display: none;">.nosp@m.</span>rski<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>19-12-2022</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a44f8a3dfd5eaf89bd2c905720b7052ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44f8a3dfd5eaf89bd2c905720b7052ba">&#9670;&nbsp;</a></span>MATRIX_PRINT_PRECISION</h2>
 
@@ -195,7 +238,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00015">15</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00027">27</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
 
 </div>
 </div>
@@ -230,19 +273,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">if</span> (!(expr)) \</div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keywordflow">if</span> constexpr(!(expr)) \</div>
 <div class="line">        { \</div>
 <div class="line">            std::ostringstream oss; \</div>
-<div class="line">            oss &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; <span class="charliteral">&#39;\n&#39;</span> &lt;&lt; msg; \</div>
+<div class="line">            oss &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; <span class="charliteral">&#39;:&#39;</span> &lt;&lt; msg; \</div>
 <div class="line">            throw except(oss.str()); \</div>
 <div class="line">        }</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00020">20</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00033">33</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
 
 </div>
 </div>
 <a id="a955eaff8d0d76bd00cc8f30841ba8944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a955eaff8d0d76bd00cc8f30841ba8944">&#9670;&nbsp;</a></span>__matrix_assert_index</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a955eaff8d0d76bd00cc8f30841ba8944">&#9670;&nbsp;</a></span>__matrix_assert_index <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,14 +301,14 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">        <a class="code" href="matrix__decl_8hpp.html#a93bf82a6b9e1cfe1175e6f677f5d102c">__matrix_assert</a>(idx &lt; M * N, std::out_of_range, \</div>
 <div class="line">            <span class="stringliteral">&quot;Index (&quot;</span> &lt;&lt; idx &lt;&lt; <span class="stringliteral">&quot;) out of range for &quot;</span> \</div>
 <div class="line">            <span class="stringliteral">&quot;dimension (&quot;</span> &lt;&lt; M &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; N &lt;&lt; <span class="charliteral">&#39;)&#39;</span>)</div>
-<div class="ttc" id="amatrix__decl_8hpp_html_a93bf82a6b9e1cfe1175e6f677f5d102c"><div class="ttname"><a href="matrix__decl_8hpp.html#a93bf82a6b9e1cfe1175e6f677f5d102c">__matrix_assert</a></div><div class="ttdeci">#define __matrix_assert(expr, except, msg)</div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00020">matrix_decl.hpp:20</a></div></div>
+<div class="ttc" id="amatrix__decl_8hpp_html_a93bf82a6b9e1cfe1175e6f677f5d102c"><div class="ttname"><a href="matrix__decl_8hpp.html#a93bf82a6b9e1cfe1175e6f677f5d102c">__matrix_assert</a></div><div class="ttdeci">#define __matrix_assert(expr, except, msg)</div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00033">matrix_decl.hpp:33</a></div></div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00028">28</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00055">55</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
 
 </div>
 </div>
 <a id="af87663fa14088ae27e01fac589358f8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af87663fa14088ae27e01fac589358f8e">&#9670;&nbsp;</a></span>__matrix_assert_bounds</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af87663fa14088ae27e01fac589358f8e">&#9670;&nbsp;</a></span>__matrix_assert_bounds <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +325,86 @@ Functions</h2></td></tr>
 <div class="line">            <span class="stringliteral">&quot;Index (&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; j &lt;&lt; <span class="stringliteral">&quot;) out of range for &quot;</span> \</div>
 <div class="line">            <span class="stringliteral">&quot;dimension (&quot;</span> &lt;&lt; M &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; N &lt;&lt; <span class="charliteral">&#39;)&#39;</span>)</div>
 </div><!-- fragment -->
-<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00033">33</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00056">56</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6efccf273c65e9671b18bffc4aa58f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6efccf273c65e9671b18bffc4aa58f48">&#9670;&nbsp;</a></span>__matrix_assert_square <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __matrix_assert_square</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        <a class="code" href="matrix__decl_8hpp.html#a93bf82a6b9e1cfe1175e6f677f5d102c">__matrix_assert</a>(M == N, std::logic_error, \</div>
+<div class="line">            <span class="stringliteral">&quot;Matrix of dimension (&quot;</span> &lt;&lt; M &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; N &lt;&lt; <span class="stringliteral">&quot;) &quot;</span> \</div>
+<div class="line">            <span class="stringliteral">&quot;not square&quot;</span>)</div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00057">57</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a955eaff8d0d76bd00cc8f30841ba8944"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a955eaff8d0d76bd00cc8f30841ba8944">&#9670;&nbsp;</a></span>__matrix_assert_index <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __matrix_assert_index</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00055">55</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af87663fa14088ae27e01fac589358f8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af87663fa14088ae27e01fac589358f8e">&#9670;&nbsp;</a></span>__matrix_assert_bounds <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __matrix_assert_bounds</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00056">56</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6efccf273c65e9671b18bffc4aa58f48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6efccf273c65e9671b18bffc4aa58f48">&#9670;&nbsp;</a></span>__matrix_assert_square <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __matrix_assert_square</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="matrix__decl_8hpp_source.html#l00057">57</a> of file <a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>.</p>
 
 </div>
 </div>

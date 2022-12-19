@@ -94,17 +94,28 @@ $(document).ready(function(){initNavTree('linalg_2example_2main_8cpp_source.html
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="linalg_2example_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">    5</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="linalg_2example_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="classlinalg_1_1Matrix.html">Matrix&lt;2, 2&gt;</a> A;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    A[0] = 1;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    A[1] = 2;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    A[2] = 3;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    A[3] = 4;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::cout &lt;&lt; A.<a class="code" href="classlinalg_1_1Matrix.html#ac3914972418e6616e5fba67fbf3349b7">Determinant</a>() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;}</div>
-<div class="ttc" id="aclasslinalg_1_1Matrix_html"><div class="ttname"><a href="classlinalg_1_1Matrix.html">linalg::Matrix</a></div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00064">matrix_decl.hpp:65</a></div></div>
-<div class="ttc" id="aclasslinalg_1_1Matrix_html_ac3914972418e6616e5fba67fbf3349b7"><div class="ttname"><a href="classlinalg_1_1Matrix.html#ac3914972418e6616e5fba67fbf3349b7">linalg::Matrix::Determinant</a></div><div class="ttdeci">T Determinant() const</div><div class="ttdef"><b>Definition:</b> <a href="matrix__impl_8hpp_source.html#l00067">matrix_impl.hpp:67</a></div></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="structlinalg_1_1Matrix.html">Matrix&lt;3, 3, long&gt;</a> A</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        1, 2, 3,</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        4, 5, 6,</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        7, 8, 0</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    };</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">auto</span> lu = A.<a class="code" href="structlinalg_1_1Matrix.html#a0cb8a3b8ddf96e02c84acb8643334be9">LU_Decomposition</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    std::cout &lt;&lt; A &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    std::cout &lt;&lt; lu.first &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::cout &lt;&lt; lu.second &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Soooo det: &quot;</span> &lt;&lt; A.Determinant() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// std::cout &lt;&lt; &quot;Determinant of:\n&quot; &lt;&lt; A &lt;&lt; &quot; is &quot; &lt;&lt; A.LU_Decomposition().first &lt;&lt; &#39;\n&#39;;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="ttc" id="alinalg_2example_2main_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="linalg_2example_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="linalg_2example_2main_8cpp_source.html#l00005">main.cpp:5</a></div></div>
-<div class="ttc" id="anamespacelinalg_html"><div class="ttname"><a href="namespacelinalg.html">linalg</a></div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00038">matrix_decl.hpp:39</a></div></div>
+<div class="ttc" id="anamespacelinalg_html"><div class="ttname"><a href="namespacelinalg.html">linalg</a></div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00060">matrix_decl.hpp:61</a></div></div>
+<div class="ttc" id="astructlinalg_1_1Matrix_html"><div class="ttname"><a href="structlinalg_1_1Matrix.html">linalg::Matrix</a></div><div class="ttdoc">A Matrix class representing a 2 dimensional object.</div><div class="ttdef"><b>Definition:</b> <a href="matrix__decl_8hpp_source.html#l00102">matrix_decl.hpp:103</a></div></div>
+<div class="ttc" id="astructlinalg_1_1Matrix_html_a0cb8a3b8ddf96e02c84acb8643334be9"><div class="ttname"><a href="structlinalg_1_1Matrix.html#a0cb8a3b8ddf96e02c84acb8643334be9">linalg::Matrix::LU_Decomposition</a></div><div class="ttdeci">std::pair&lt; Matrix&lt; N, N, T &gt;, Matrix&lt; N, N, T &gt; &gt; LU_Decomposition() const</div><div class="ttdoc">Applies LU decomposition and returns the lower and upper matrices.</div><div class="ttdef"><b>Definition:</b> <a href="matrix__impl_8hpp_source.html#l00159">matrix_impl.hpp:159</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

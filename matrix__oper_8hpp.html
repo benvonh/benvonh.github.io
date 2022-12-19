@@ -91,22 +91,27 @@ $(document).ready(function(){initNavTree('matrix__oper_8hpp.html',''); initResiz
 <div class="title">matrix_oper.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Header file for overloaded matrix operators.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="matrix__decl_8hpp_source.html">matrix_decl.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for matrix_oper.hpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="matrix__oper_8hpp__incl.png" border="0" usemap="#a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hpp" alt=""/></div>
 <map name="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hpp" id="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hpp">
-<area shape="rect" title=" " alt="" coords="302,5,473,61"/>
-<area shape="rect" href="matrix__decl_8hpp.html" title=" " alt="" coords="324,109,451,136"/>
+<area shape="rect" title="Header file for overloaded matrix operators." alt="" coords="379,5,550,61"/>
+<area shape="rect" href="matrix__decl_8hpp.html" title="Header file for matrix declaration." alt="" coords="401,109,528,136"/>
 <area shape="rect" title=" " alt="" coords="5,184,76,211"/>
 <area shape="rect" title=" " alt="" coords="100,184,165,211"/>
-<area shape="rect" title=" " alt="" coords="190,184,275,211"/>
-<area shape="rect" title=" " alt="" coords="299,184,374,211"/>
-<area shape="rect" title=" " alt="" coords="398,184,478,211"/>
-<area shape="rect" title=" " alt="" coords="503,184,573,211"/>
-<area shape="rect" title=" " alt="" coords="598,184,673,211"/>
-<area shape="rect" title=" " alt="" coords="697,184,784,211"/>
+<area shape="rect" title=" " alt="" coords="190,184,265,211"/>
+<area shape="rect" title=" " alt="" coords="289,184,363,211"/>
+<area shape="rect" title=" " alt="" coords="388,184,448,211"/>
+<area shape="rect" title=" " alt="" coords="473,184,553,211"/>
+<area shape="rect" title=" " alt="" coords="577,184,648,211"/>
+<area shape="rect" title=" " alt="" coords="673,184,758,211"/>
+<area shape="rect" title=" " alt="" coords="783,184,869,211"/>
+<area shape="rect" title=" " alt="" coords="893,184,980,211"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -114,9 +119,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="matrix__oper_8hpp__dep__incl.png" border="0" usemap="#a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hppdep" alt=""/></div>
 <map name="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hppdep" id="a_2home_2ben_2repos_2linalg_2linalg_2matrix_2matrix__oper_8hppdep">
-<area shape="rect" title=" " alt="" coords="12,5,183,61"/>
-<area shape="rect" href="matrix_8hpp.html" title=" " alt="" coords="5,109,189,151"/>
-<area shape="rect" href="linalg_8hpp.html" title=" " alt="" coords="12,199,183,240"/>
+<area shape="rect" title="Header file for overloaded matrix operators." alt="" coords="12,5,183,61"/>
+<area shape="rect" href="matrix_8hpp.html" title="Header file for matrix module." alt="" coords="5,109,189,151"/>
+<area shape="rect" href="linalg_8hpp.html" title="Header file for linalg library." alt="" coords="12,199,183,240"/>
 <area shape="rect" href="linalg_2example_2main_8cpp.html" title=" " alt="" coords="12,288,183,329"/>
 </map>
 </div>
@@ -136,6 +141,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ae855dcfc7bb216c09a649c68072e61d8"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
 <tr class="memitem:ae855dcfc7bb216c09a649c68072e61d8"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#ae855dcfc7bb216c09a649c68072e61d8">linalg::operator-</a> (Matrix&lt; M, N, T &gt; lhs, const Matrix&lt; M, N, T &gt; &amp;rhs)</td></tr>
 <tr class="separator:ae855dcfc7bb216c09a649c68072e61d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99f09673004bbf7c94ebfef8a695660c"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:a99f09673004bbf7c94ebfef8a695660c"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a99f09673004bbf7c94ebfef8a695660c">linalg::operator*</a> (Matrix&lt; M, N, T &gt; lhs, T rhs)</td></tr>
+<tr class="separator:a99f09673004bbf7c94ebfef8a695660c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef6efc7e293a96f36c76de17ea0b069b"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, typename T &gt; </td></tr>
+<tr class="memitem:aef6efc7e293a96f36c76de17ea0b069b"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, N, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#aef6efc7e293a96f36c76de17ea0b069b">linalg::operator*</a> (T lhs, Matrix&lt; M, N, T &gt; rhs)</td></tr>
+<tr class="separator:aef6efc7e293a96f36c76de17ea0b069b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memTemplParams" colspan="2">template&lt;std::size_t M, std::size_t N, std::size_t K, typename T &gt; </td></tr>
 <tr class="memitem:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memTemplItemLeft" align="right" valign="top">Matrix&lt; M, K, T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a9a34bce9a86bc8546d6b93c31127bd66">linalg::operator*</a> (Matrix&lt; M, N, T &gt; lhs, const Matrix&lt; N, K, T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a9a34bce9a86bc8546d6b93c31127bd66"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +160,15 @@ Functions</h2></td></tr>
 <tr class="memitem:a362a380d4067f1f8dfb58554a21354f3"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelinalg.html#a362a380d4067f1f8dfb58554a21354f3">linalg::operator&lt;&lt;</a> (std::ostream &amp;os, const Matrix&lt; M, N, T &gt; &amp;obj)</td></tr>
 <tr class="separator:a362a380d4067f1f8dfb58554a21354f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Header file for overloaded matrix operators. </p>
+<dl class="section author"><dt>Author</dt><dd>Benjamin von Snarski (<a href="#" onclick="location.href='mai'+'lto:'+'ben'+'ja'+'min'+'vo'+'nsn'+'ar'+'ski'+'@g'+'mai'+'l.'+'com'; return false;">benja<span style="display: none;">.nosp@m.</span>minv<span style="display: none;">.nosp@m.</span>onsna<span style="display: none;">.nosp@m.</span>rski<span style="display: none;">.nosp@m.</span>@gmai<span style="display: none;">.nosp@m.</span>l.co<span style="display: none;">.nosp@m.</span>m</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>19-12-2022</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
+
+<p class="definition">Definition in file <a class="el" href="matrix__oper_8hpp_source.html">matrix_oper.hpp</a>.</p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

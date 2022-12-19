@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vector_112',['Vector',['../namespacelinalg.html#aa2155db22aa390a52a6ba8b380e59e86',1,'linalg']]]
+  ['iterator_5fcategory_144',['iterator_category',['../classlinalg_1_1Matrix_1_1Iterator.html#a8092cad00c1189c23bdf6a5e1656b932',1,'linalg::Matrix::Iterator']]]
 ];

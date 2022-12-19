@@ -1,7 +1,7 @@
 var annotated_dup =
 [
     [ "linalg", "namespacelinalg.html", [
-      [ "Matrix", "classlinalg_1_1Matrix.html", "classlinalg_1_1Matrix" ]
+      [ "Matrix", "structlinalg_1_1Matrix.html", "structlinalg_1_1Matrix" ]
     ] ],
     [ "pid", "namespacepid.html", [
       [ "Controller", "classpid_1_1Controller.html", "classpid_1_1Controller" ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['getpreverror_12',['GetPrevError',['../classpid_1_1D.html#a9dbc9e78688c88deaa7247826720c50b',1,'pid::D']]],
-  ['gettotalerror_13',['GetTotalError',['../classpid_1_1I.html#a0d9f530e2073f0eae0a9cf0f4dd3d1b8',1,'pid::I']]]
+  ['end_18',['end',['../structlinalg_1_1Matrix.html#a80fa09a5fd2cd3937d71d09069062a27',1,'linalg::Matrix']]],
+  ['eye_19',['eye',['../structlinalg_1_1Matrix.html#a73b116660acfba91619c25d4dbcfbe54',1,'linalg::Matrix']]]
 ];

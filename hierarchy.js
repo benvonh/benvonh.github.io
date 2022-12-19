@@ -5,7 +5,8 @@ var hierarchy =
       [ "pid::I< T >", "classpid_1_1I.html", null ],
       [ "pid::P< T >", "classpid_1_1P.html", null ]
     ] ],
-    [ "linalg::Matrix< M, N, T >", "classlinalg_1_1Matrix.html", null ],
+    [ "linalg::Matrix< M, N, T >::Iterator", "classlinalg_1_1Matrix_1_1Iterator.html", null ],
+    [ "linalg::Matrix< M, N, T >", "structlinalg_1_1Matrix.html", null ],
     [ "pid::C", null, [
       [ "pid::Controller< C >", "classpid_1_1Controller.html", null ]
     ] ]

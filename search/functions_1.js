@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['det_78',['det',['../classlinalg_1_1Matrix.html#aa42a6c0ab9b92a2179478da484e78578',1,'linalg::Matrix']]],
-  ['determinant_79',['Determinant',['../classlinalg_1_1Matrix.html#ac3914972418e6616e5fba67fbf3349b7',1,'linalg::Matrix']]]
+  ['begin_99',['begin',['../structlinalg_1_1Matrix.html#a1df9d91d27e1d5d242bd931aad4cf1ed',1,'linalg::Matrix']]]
 ];
