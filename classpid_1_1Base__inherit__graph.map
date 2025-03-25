@@ -1,6 +1,0 @@
-<map id="pid::Base&lt; T &gt;" name="pid::Base&lt; T &gt;">
-<area shape="rect" id="node1" title="An abstract base class interface for derived controllers." alt="" coords="115,5,235,32"/>
-<area shape="rect" id="node2" href="$classpid_1_1D.html" title="The derivative control type." alt="" coords="5,80,104,107"/>
-<area shape="rect" id="node3" href="$classpid_1_1I.html" title="The integral control type." alt="" coords="129,80,221,107"/>
-<area shape="rect" id="node4" href="$classpid_1_1P.html" title="The proportional control type." alt="" coords="245,80,341,107"/>
-</map>
