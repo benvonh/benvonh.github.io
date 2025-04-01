@@ -1,7 +1,8 @@
-b   ---
-layout: post
-title: "What I Learned About Batch Sizes in Deep Learning"
+---
+title: What I Learned About Batch Sizes in Deep Learning
 date: 2025-04-01
+categories: [Batch_Size]
+tags: [ai]
 ---
 
 ## Introduction
