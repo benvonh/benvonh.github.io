@@ -1,7 +1,7 @@
 ---
 title: What I Learned About Batch Sizes in Deep Learning
 date: 2025-04-01
-categories: [Batch_Size]
+categories: [AI]
 tags: [ai]
 ---
 
