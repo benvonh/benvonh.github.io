@@ -1,5 +1,5 @@
 ---
-title: What I Learned About Batch Sizes in Deep Learning
+title: Effects of Batch Sizes on Training Speed
 date: 2025-04-01
 categories: [AI]
 tags: [ai]
